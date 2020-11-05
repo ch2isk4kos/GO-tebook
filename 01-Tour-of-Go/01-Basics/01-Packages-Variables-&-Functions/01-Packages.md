@@ -1,6 +1,22 @@
 # Tour of Go: Packages
 
-Every Go program is made up of **packages**. Each program begins running in the package `main` which is the entry point of your application.
+</br>
+
+Each program begins running in the package main:
+
+> **package** main
+
+The import identifier groups together each dependency that you're abstracting:
+
+> **import** ("fmt" "math/rand" "time)
+
+An identifier is exported if it starts with a capital letter:
+
+> fmt.**P**rintln( )
+
+</br>
+
+**Random Number Generator Example:**
 
 ```go
 package main
@@ -30,5 +46,3 @@ Your custom generated number is: 24
 ```
 
 </br>
-
-## Imports
