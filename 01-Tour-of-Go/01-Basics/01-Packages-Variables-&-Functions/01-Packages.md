@@ -1,12 +1,12 @@
 # Tour of Go: Packages
 
-</br>
+## Setting Up a `main.go` File
 
 Each program begins running in the **`package main`**.
-
-The **`import`** identifier groups together each dependency that you're abstracting.
-
-An identifier is exported if it starts with a capital letter: **`fmt.Println()`**
+The **`import`** identifier groups together each package that you're abstracting.
+Package functionality is exported if its identifier starts with a capital letter: 
+❌ fmt.**p**rintln( )
+✅ fmt.**P**rintln( )
 
 </br>
 
