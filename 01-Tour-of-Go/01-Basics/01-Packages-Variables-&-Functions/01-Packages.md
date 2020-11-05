@@ -38,5 +38,3 @@ func rando(min, max int) int {
 Your random number is: 10
 Your custom generated number is: 24
 ```
-
-</br>
