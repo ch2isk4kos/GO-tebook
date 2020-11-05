@@ -2,17 +2,11 @@
 
 </br>
 
-Each program begins running in the package main:
+Each program begins running in the **`package main`**.
 
-> **package** main
+The **`import`** identifier groups together each dependency that you're abstracting.
 
-The import identifier groups together each dependency that you're abstracting:
-
-> **import** ("fmt" "math/rand" "time)
-
-An identifier is exported if it starts with a capital letter:
-
-> fmt.**P**rintln( )
+An identifier is exported if it starts with a capital letter: **`fmt.Println()`**
 
 </br>
 
