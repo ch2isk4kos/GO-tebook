@@ -86,4 +86,17 @@ func main() {
 
 </br>
 
+## Infinite Loop
+
+```go
+package main
+
+func main() {
+  for {
+  }
+}
+```
+
+</br>
+
 **Left off [here](<https://tour.golang.org/flowcontrol/1>)**
