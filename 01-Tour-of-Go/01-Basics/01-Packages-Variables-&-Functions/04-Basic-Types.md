@@ -122,4 +122,47 @@ func main() {
 
 </br>
 
+## Type Inference
+
+When declaring a variable without explicity specifying its type, the variables type is determined by the initialized value on the right hand side.
+
+If the type is explicitly defined, it infers the variable type by the value it was initailized to.
+
+```go
+package main
+
+import "fmt"
+
+var i int
+
+func main() {  
+  j := i
+  fmt.Printf("j = %v is of type %T\n", j, j)
+  j = j + 10.24
+  fmt.Printf("j = %v is of type %T\n", j, j)
+  
+  v := 10
+  fmt.Printf("v = %v is of type %T\n", v, v)
+  
+  w := 10.24
+  fmt.Printf("v = %v is of type %T\n", w, w)
+  
+  y := 0.867 + 0.5i
+  fmt.Printf("w = %v is of type %T\n", y, y)
+}
+```
+
+**Output**:
+
+```txt
+j = 0 is of type int
+./prog.go:11:8: constant 10.9i truncated to integer
+
+v = 24 is of type int
+w = 33.34 is of type float64
+y = (0.867+0.5i) is of type complex128
+```
+
+</br>
+
 **Rob Pike: [Go Declaration Syntax](https://blog.golang.org/declaration-syntax)**
