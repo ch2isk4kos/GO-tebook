@@ -114,7 +114,3 @@ func main() {
 ```txt
 Good afternoon.
 ```
-
-</br>
-
-**Left off [here](<https://tour.golang.org/flowcontrol/9>)**
