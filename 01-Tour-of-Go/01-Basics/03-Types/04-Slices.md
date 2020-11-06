@@ -334,7 +334,7 @@ d -> len = 3   cap = 3 [0 0 0]
 
 </br>
 
-## Slices of Slices ( Matrices )
+## Slice of Slices: [ ][ ]Matrices
 
 Slices can contain any type, including other slices.
 
