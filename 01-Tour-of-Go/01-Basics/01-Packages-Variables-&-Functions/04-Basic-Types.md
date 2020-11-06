@@ -162,7 +162,3 @@ v = 24 is of type int
 w = 33.34 is of type float64
 y = (0.867+0.5i) is of type complex128
 ```
-
-</br>
-
-**Rob Pike: [Go Declaration Syntax](https://blog.golang.org/declaration-syntax)**
