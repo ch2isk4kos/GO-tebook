@@ -58,4 +58,32 @@ func main() {
 1024
 ```
 
+</br>
+
+## Go `for` a "`while`"
+
+The C programming languages `while` loop is spelled `for` in Go.
+
+```go
+package main
+
+import "fmt"
+
+func main() {
+  sum := 1
+  for sum < 1000 {
+    sum += sum
+  }
+  fmt.Println(sum)
+}
+```
+
+**Output**:
+
+```txt
+1024
+```
+
+</br>
+
 **Left off [here](<https://tour.golang.org/flowcontrol/1>)**
