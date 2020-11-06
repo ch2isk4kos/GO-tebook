@@ -96,7 +96,3 @@ func main() {
   }
 }
 ```
-
-</br>
-
-**Left off [here](<https://tour.golang.org/flowcontrol/1>)**
