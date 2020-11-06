@@ -27,6 +27,8 @@ The **`int`**, **`uint`**, and **`uintptr`** types are usually 32 bits wide on 3
 
 When you need an integer value you should use **`int`** unless you have a specific reason to use a _sized_ or _unsigned_ integer type.
 
+</br>
+
 ```go
 package main
 
@@ -86,6 +88,36 @@ func main() {
 
 ```txt
 0 0 false ""
+```
+
+</br>
+
+## Type Conversions
+
+The expression `T(v)` converts the value `v` to the type `T`.
+
+Unlike in C, assignment between items of a different type requires an explicit conversion.
+
+> var i int = 42
+> var f float64 = float64( i )
+> var u uint = uint( f )
+
+</br>
+
+```go
+package main
+
+import (
+  "fmt"
+  "math"
+)
+
+func main() {
+  var x, y int = 3, 4
+  var f float64 = math.Sqrt(float64(x*x + y*y))
+  var z uint = uint(f)
+  fmt.Println(x, y, z)
+}
 ```
 
 </br>
