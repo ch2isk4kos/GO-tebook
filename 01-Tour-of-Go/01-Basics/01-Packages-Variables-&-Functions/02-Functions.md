@@ -69,4 +69,34 @@ Chris Kakos
 
 </br>
 
+## Named Return Values
+
+When naming return values, they act as variables and are definied at the top of the block scope. The names are used to document whatever you wish to return.
+
+```go
+package main
+
+import "fmt"
+
+func split(sum int) (x, y int) {
+  x = sum * 4 / 9
+  y = sum - x
+  fmt.Printf("%v is split between %v and %v\n", sum, x, y)
+  return
+}
+
+func main() {
+  fmt.Println(split(10))
+}
+```
+
+**Output**:
+
+```txt
+10 is split between 4 and 6
+4 6
+```
+
+</br>
+
 **Rob Pike: [Go Declaration Syntax](https://blog.golang.org/declaration-syntax)**
