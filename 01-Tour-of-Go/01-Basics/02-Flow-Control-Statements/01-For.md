@@ -36,4 +36,26 @@ func main() {
 
 </br>
 
+The **init** and **post** statements are optional:
+
+```go
+package main
+
+import "fmt"
+
+func main() {
+  sum := 1
+  for ; sum < 1000; {
+    sum += sum
+  }
+  fmt.Println(sum)
+}
+```
+
+**Output**:
+
+```txt
+1024
+```
+
 **Left off [here](<https://tour.golang.org/flowcontrol/1>)**
