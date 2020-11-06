@@ -29,4 +29,50 @@ func main() {
 
 </br>
 
-**Rob Pike: [Go Declaration Syntax](https://blog.golang.org/declaration-syntax)**
+## Variables with Initializers
+
+A  **`var`** decalaration can include one initilaier per variable. If an initializer is present, the type can be omitted and the variable will take the type of the initializer.
+
+```go
+package main
+
+import "fmt"
+
+var i, j int = 1, 2
+
+func main() {
+  var g, js, java = "yes", true, "no!"
+  fmt.Println(i, j, g, js, java)
+}
+```
+
+**Output**:
+
+```txt
+1 2 yes true NO!
+```
+
+</br>
+
+## Short Variable Declaration
+
+You can only use the short variable declaration inside of a function in place of a **`var`** declaration with an implicit type.
+
+```go
+package main
+
+import "fmt"
+
+func main() {
+  var i, j int = 1, 2
+  k := 3
+
+  fmt.Println(i, j, k)
+}
+```
+
+**Output**:
+
+```txt
+1 2 3
+```
