@@ -73,6 +73,10 @@ Chris Kakos
 
 When naming return values, they act as variables and are definied at the top of the block scope. The names are used to document whatever you wish to return.
 
+A **`return`** without arguments--referred to as a _**naked return**_--outputs the named values defined at the top of the block scope.
+
+**NOTE**: Naked return statements should be used only in short functions and can harm readability in longer functions.
+
 ```go
 package main
 
@@ -96,7 +100,3 @@ func main() {
 10 is split between 4 and 6
 4 6
 ```
-
-</br>
-
-**Rob Pike: [Go Declaration Syntax](https://blog.golang.org/declaration-syntax)**
