@@ -28,6 +28,6 @@ func Pic(dx, dy int) [][]uint8 {
 }
 
 func main() {
-	pic.Show(Pic)
+	pic.Show(Pic)												// https://godoc.org/golang.org/x/tour/
 	pic.ShowImage(Pic)
 }
