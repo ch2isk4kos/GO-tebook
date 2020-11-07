@@ -168,7 +168,3 @@ The value: 0
 The value: 0 	Present? false
 m: map[]
 ```
-
-</br>
-
-**Left Off [Here](<https://tour.golang.org/moretypes/19>)**
