@@ -479,4 +479,69 @@ Arthur Dent (42 years) Zaphod Beeblebrox (9001 years)
 
 </br>
 
+## Stringers Exercise
+
+```go
+// WITHOUT STRINGER
+package main
+
+import "fmt"
+
+type IPAddr [4]byte
+
+// TODO: Add a "String() string" method to IPAddr.
+
+func main() {
+  hosts := map[string]IPAddr{
+    "loopback":  {127, 0, 0, 1},
+    "googleDNS": {8, 8, 8, 8},
+  }
+  for name, ip := range hosts {
+    fmt.Printf("%v: %v\n", name, ip)
+  }
+}
+```
+
+**Output**:
+
+```txt
+googleDNS: [8 8 8 8]
+loopback: [127 0 0 1]
+```
+
+</br>
+
+### Solution
+
+```go
+package main
+
+import "fmt"
+
+type IPAddr [4]byte
+
+func (ip IPAddr) String() string {
+  return fmt.Sprintf("%v.%v.%v.%v", ip[0], ip[1], ip[2], ip[3])
+}
+
+func main() {
+  hosts := map[string]IPAddr{
+    "loopback":  {127, 0, 0, 1},
+    "googleDNS": {8, 8, 8, 8},
+  }
+  for name, ip := range hosts {
+    fmt.Printf("%v: %v\n", name, ip)
+  }
+}
+```
+
+**Output**:
+
+```txt
+loopback: 127.0.0.1
+googleDNS: 8.8.8.8
+```
+
+</br>
+
 **Left Off [Here](<https://tour.golang.org/methods/1>)**
