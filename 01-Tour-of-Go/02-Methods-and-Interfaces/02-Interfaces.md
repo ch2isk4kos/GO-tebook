@@ -8,6 +8,7 @@
 **[Type Assertions](#type-assertions)**
 **[Type `switch`](#type-switch)**
 **[Stringers](#stringers)**
+**[Stringers Exercise](#stringers-exercise)**
 
 ## Interfaces
 
@@ -541,7 +542,3 @@ func main() {
 loopback: 127.0.0.1
 googleDNS: 8.8.8.8
 ```
-
-</br>
-
-**Left Off [Here](<https://tour.golang.org/methods/1>)**
