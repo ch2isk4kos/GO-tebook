@@ -1,5 +1,41 @@
 # Tour of Go: Methods
 
+Go does not have classes. You can however define methods on types.
+
+A **method** is a function with a special receiver argument.
+
+The receiver appears in its own argument list between the `func` keyword and the _method name_.
+
+```go
+package main
+
+import (
+  "fmt"
+  "math"
+)
+
+type Vertex struct {
+  X, Y float64
+}
+
+func (v Vertex) Abs() float64 {
+  return math.Sqrt(v.X*v.X + v.Y*v.Y)
+}
+
+func main() {
+  v := Vertex{3, 4}
+  fmt.Println(v.Abs())
+}
+```
+
+**Output**:
+
+```txt
+5
+```
+
+**NOTE**: the Abs method has a receiver of type Vertex named `v`.
+
 </br>
 
 **Left Off [Here](<https://tour.golang.org/methods/1>)**
