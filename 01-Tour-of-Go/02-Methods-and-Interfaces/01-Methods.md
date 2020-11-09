@@ -305,7 +305,3 @@ func main() {
 Before scaling: &{X:3 Y:4}, Abs: 5
 After scaling: &{X:15 Y:20}, Abs: 25
 ```
-
-</br>
-
-**Left Off [Here](<https://tour.golang.org/methods/1>)**
