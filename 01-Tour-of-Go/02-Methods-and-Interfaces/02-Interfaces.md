@@ -1,5 +1,16 @@
 # Tour of Go: Interfaces
 
+**[Interfaces are Implemented Implicitly](#interfaces-are-implemented-implicitly)**
+**[Interface Values](#interface-values)**
+**[Interfaces with `nil` Underlying Values](#interfaces-with-nil-underlying-values)**
+**[`nil` Interface Values](#nil-interface-values)**
+**[The Empty Interface](#the-empty-interface)**
+**[Type Assertions](#type-assertions)**
+**[Type `switch`](#type-switch)**
+**[Stringers](#stringers)**
+
+## Interfaces
+
 An _interface type_ is defined as a set of method signatures.
 A value of _interface type_ can hold any value that implements those methods.
 
@@ -423,6 +434,10 @@ Twice 21 is 42
 "hello" is 5 bytes long
 I don't know about type bool!
 ```
+
+</br>
+
+## Stringers
 
 </br>
 
